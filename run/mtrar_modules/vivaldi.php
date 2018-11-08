@@ -16,7 +16,7 @@ if (file_exists($packagefile)) {
 	$file = explode("\n", file_get_contents($packagefile));
 
 	for ($i = 0; $i < count($file); $i++) {
-		if (trim($file[$i]) == 'exec -a "$0" "$HERE/vivaldi"-bin "$@"') {
+		if (trim($file[$i]) == 'exec -a "$0" "$HERE/vivaldi-bin" "$@"') {
 			$replacezeile = $i;
 		}
 	}
